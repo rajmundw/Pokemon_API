@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'alex_brushregular';
+  src: url("../fonts/alex-brush/alexbrush-regular.woff2") format("woff2"), url("../fonts/alex-brush/alexbrush-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+  url('../fonts/lato/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 1100px;
+  position: relative;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  float: left;
+  border: 2px solid #D8D8D8;
+  color: #D8D8D8;
+  text-align: center;
+  padding-top: 8px;
+  margin-right: 5px;
+  font-family: 'alex_brushregular';
+}
+
+.number:hover {
+  border: 2px solid #AEAEAE;
+  color: #AEAEAE;
+  cursor: pointer;
+}
+
+.number:last-of-type {
+  margin-right: 0px;
+}
+
+.pagination {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.numbers {
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+  font-family: 'alex_brushregular';
+  color: #D8D8D8;
+  margin: 0 auto;
+}
+
+.clicked {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  float: left;
+  text-align: center;
+  padding-top: 8px;
+  margin-right: 5px;
+  font-family: 'alex_brushregular';
+  border: 2px solid #AEAEAE;
+  color: #AEAEAE;
+  cursor: pointer;
+}
+
+.pokemon {
+  border: 2px solid #D8D8D8;
+  width: 199px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+  padding: 15px 30px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon:hover {
+  border: 2px solid #AEAEAE;
+  color: #AEAEAE;
+  cursor: pointer;
+}
+
+.img {
+  height: 130px;
+  margine-left: 10px;
+}
+
+.main-pokemon {
+  height: 400px;
+  margin: 0px auto;
+  weight: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-typ {
+  float: left;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.visible {
+  display: block;
+  width: 700px;
+  height: 500px;
+  border: red 5px solid;
+}
+.pokemon-info{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7dee3+5,d7dee3+5,e5ebee+30,f5f7f9+49,f5f7f9+57,f5f7f9+59,f5f7f9+59,f6f8f9+66,f6f8f9+66,f5f7f9+70 */
+  background: rgb(215,222,227); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(215,222,227,1) 5%, rgba(215,222,227,1) 5%, rgba(229,235,238,1) 30%, rgba(245,247,249,1) 49%, rgba(245,247,249,1) 57%, rgba(245,247,249,1) 59%, rgba(245,247,249,1) 59%, rgba(246,248,249,1) 66%, rgba(246,248,249,1) 66%, rgba(245,247,249,1) 70%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(215,222,227,1) 5%,rgba(215,222,227,1) 5%,rgba(229,235,238,1) 30%,rgba(245,247,249,1) 49%,rgba(245,247,249,1) 57%,rgba(245,247,249,1) 59%,rgba(245,247,249,1) 59%,rgba(246,248,249,1) 66%,rgba(246,248,249,1) 66%,rgba(245,247,249,1) 70%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(215,222,227,1) 5%,rgba(215,222,227,1) 5%,rgba(229,235,238,1) 30%,rgba(245,247,249,1) 49%,rgba(245,247,249,1) 57%,rgba(245,247,249,1) 59%,rgba(245,247,249,1) 59%,rgba(246,248,249,1) 66%,rgba(246,248,249,1) 66%,rgba(245,247,249,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7dee3', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  height: 100vh;
+}
+.back{
+  font-family: 'alex_brushregular';
+  color: #D8D8D8;
+  font-size: 60px;
+  position: absolute;
+  left:1000px;
+  top:580px
+}
+.back:hover {
+
+  color: #AEAEAE;
+  cursor: pointer;
+}
+.pokemon-img{
+  position: absolute;
+  left: 700px;
+  top: 150px;
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.key-pokemon-info{
+  font-size: 20px;
+  line-height: 30px;
+  color: #AEAEAE;
+  font-family: 'latoregular';
+  margin-left: 100px;
+
+}
+
+@media all and (max-width: 400px) {
+  .main-pokemon {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pagination {
+    display: none;
+  }
+  .header {
+    display: none;
+
+  }
+}
