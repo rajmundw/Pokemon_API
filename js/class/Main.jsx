@@ -19,7 +19,7 @@ class Main extends React.Component {
         this.props.updateJsonAnwer(answer)         // aktualizacja tablicy z odpowiedzia
     }
     newFetch = (number) => {                                                      // zapytanie do serwera
-        const answer = fetch(`http://localhost:3000/pokemon?_page=${number}`)
+        const answer = fetch(`https://rajmundw.github.io/Pokemon_API/pokemon?_page=${number}`)
     .then(resp => resp.json())
             .then(data => {
                 this.changeArray(data)                             // wywołanie funkcji aktualizacji tablicy
